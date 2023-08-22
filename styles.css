@@ -1,3 +1,7 @@
+* {
+  font-family: sans-serif;
+}
+
 #crazyCanvas {
   background-color: black;
   position: relative;
