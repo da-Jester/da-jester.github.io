@@ -68,7 +68,7 @@ function circles() {
     drawCircle(canvas.width / 2, canvas.height / 2, radius, `hsl(${hue}deg, 100%, ${bright}%)`, radius / 4)
     hue += 20
     radius *= 1.1
-    bright += 1.7
+    bright += 1.6
   }
 }
 
