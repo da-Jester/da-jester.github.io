@@ -6,15 +6,15 @@ function repeat(times, code) {
 }
 
 //Canvas Scripts:
-const visibleWidth = document.documentElement.clientWidth;
-const visibleHeight = document.documentElement.clientHeight;
-
-
 const canvas = document.querySelector("#crazyCanvas")
 const ctx = canvas.getContext("2d")
 
+const visibleWidth = document.documentElement.clientWidth;
+const visibleHeight = document.documentElement.clientHeight;
 canvas.width = visibleWidth
 canvas.height = visibleHeight
+
+//prevent scrolling?
 
 let canvasLongestSide = canvas.width
 if (canvas.height > canvas.width) {
