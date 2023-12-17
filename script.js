@@ -14,10 +14,6 @@ function clearCanvas() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
 
-window.onload = function() {
-  resizeCanvas
-}
-
 function drawCircle(x, y, radius, colour, lineWidth) {
   ctx.beginPath();
   ctx.arc(x, y, radius, 0, 2 * Math.PI); // arc(centre x, centre y, radius)
@@ -91,5 +87,6 @@ function circles() {
   }
 }
 
-//repeat(100, () => circles())
+resizeCanvas()
+
 setInterval(drawTunnel, 1000 / 30);
